@@ -11,6 +11,7 @@ Go to Settings
 2. Search format on save > check the checkbox
 3. Search auto save > set to "on focus change"
 4. Search tab size > set to "2"
+5. Search auto closing tags > uncheck (if u want to close the tag manually)
 
 Project-Folder-Name : html-css-js-project
 
