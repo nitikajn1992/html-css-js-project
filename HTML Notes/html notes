@@ -1,0 +1,13 @@
+Starting with :
+VS Code Settings
+go to Extension
+
+1. Need to install "Prettier-Code formatter" enable it. After that refresh the vs code
+2. Need to install a color theme " One Monokai Theme " set color theme.
+
+Go to Settings
+
+1. Search default formatter> set to "Prettier-Code formatter"
+2. Search format on save > check the checkbox
+3. Search auto save > set to "on focus change"
+4. Search tab size > set to "2"
