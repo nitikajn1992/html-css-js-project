@@ -13,3 +13,13 @@ Go to Settings
 4. Search tab size > set to "2"
 
 Project-Folder-Name : html-css-js-project
+
+Anatomy of an HTML Element
+
+<p>HTML is a markup language</p> 
+Entirely its an element
+<p> - Opening tag (Name of the element)  i.e p (in this case) wrapped in <p and >
+
+HTML is a markup language - Content (text in this case) but it might be another element (child element) Some elements have no content (<img>)
+
+</p> - Closing tag (/Name of the element)  i.e p (in this case) wrapped in </p and >
