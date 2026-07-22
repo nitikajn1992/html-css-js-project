@@ -356,3 +356,36 @@ HTML provides **semantic elements** to organize the structure of a webpage. Thes
 - `<article>` contains independent content.
 - `<footer>` defines the bottom section of the page.
 - HTML entities are used to display special characters, such as `&copy;` for **©**.
+
+## Semantic HTML
+
+### What is Semantic HTML?
+
+**Semantic HTML** means using HTML elements that clearly describe the purpose and meaning of the content they contain.
+
+Instead of using generic elements like `<div>` and `<span>` everywhere, semantic elements make the structure of a webpage easier to understand for browsers, search engines, and developers.
+
+### Examples of Semantic Elements
+
+| Element     | Purpose                                                              |
+| ----------- | -------------------------------------------------------------------- |
+| `<header>`  | Defines the header of a webpage or section.                          |
+| `<nav>`     | Contains navigation links.                                           |
+| `<main>`    | Contains the main content of the webpage.                            |
+| `<section>` | Groups related content together.                                     |
+| `<article>` | Represents independent content, such as a blog post or news article. |
+| `<aside>`   | Contains related or sidebar content.                                 |
+| `<footer>`  | Defines the footer of a webpage or section.                          |
+| `<strong>`  | Indicates important text.                                            |
+| `<em>`      | Indicates emphasized text.                                           |
+
+### Benefits of Semantic HTML
+
+- Makes HTML code easier to read and understand.
+- Improves accessibility for screen readers.
+- Helps search engines better understand the content (SEO).
+- Makes websites easier to maintain.
+
+### Key Point
+
+> **Semantic HTML is the practice of using HTML elements that clearly describe the meaning and purpose of the content they contain.**
