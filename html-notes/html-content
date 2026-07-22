@@ -33,3 +33,8 @@ Text
 
 Things to remember:
 There is only one primary heading
+
+Sementic HTML Elements
+
+<strong> > standout for important element of the web page (to make text bold)
+<em> > means we need to empathese the text on the webpage(to make italic)
