@@ -287,3 +287,72 @@ To open a link in a **new browser tab**, use the `target` attribute with the val
 - `target="_blank"` opens the link in a new tab.
 - Use **internal links** to navigate within your website.
 - Use **external links** to navigate to other websites.
+
+## Structuring a Web Page
+
+HTML provides **semantic elements** to organize the structure of a webpage. These elements make your code easier to read and improve accessibility and SEO.
+
+### Common Structural Elements
+
+| Element     | Purpose                                                                                                                      |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `<header>`  | Represents the top section of a webpage or a section. It usually contains the logo, heading, or navigation.                  |
+| `<nav>`     | Contains the navigation links (menus) used to move between pages or sections.                                                |
+| `<article>` | Represents independent, self-contained content such as a blog post, news article, or forum post.                             |
+| `<footer>`  | Represents the bottom section of a webpage. It usually contains copyright information, contact details, or additional links. |
+
+### Basic Page Structure
+
+```html
+<header>
+  <h1>My Website</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<article>
+  <h2>Article Title</h2>
+  <p>This is the main content of the article.</p>
+</article>
+
+<footer>
+  <p>&copy; 2026 My Website</p>
+</footer>
+```
+
+---
+
+## HTML Entities
+
+**HTML Entities** are special codes used to display reserved characters or symbols that cannot be typed directly in HTML.
+
+### Example
+
+| Entity   | Output | Purpose                        |
+| -------- | ------ | ------------------------------ |
+| `&copy;` | ©      | Displays the copyright symbol. |
+
+**Example:**
+
+```html
+<p>&copy; 2026 My Website. All Rights Reserved.</p>
+```
+
+**Output:**
+
+> © 2026 My Website. All Rights Reserved.
+
+---
+
+## Key Points
+
+- Use semantic elements to create a well-structured webpage.
+- `<header>` defines the top section.
+- `<nav>` contains navigation links.
+- `<article>` contains independent content.
+- `<footer>` defines the bottom section of the page.
+- HTML entities are used to display special characters, such as `&copy;` for **©**.
