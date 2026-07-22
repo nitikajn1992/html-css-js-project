@@ -180,3 +180,36 @@ Use <ol> for numbered lists and <ul> for bullet lists.
 Every item inside a list is created using the <li> element.
 
 Images and Attributes
+
+## HTML Attributes
+
+### What are Attributes?
+
+**Attributes** provide additional information about an HTML element. They are written inside the **opening tag** and help define the element's behavior or properties.
+
+### Example
+
+```html
+<img src="cat.jpg" alt="A cute cat" width="300" height="200" />
+```
+
+### Common Image Attributes
+
+| Attribute | Purpose                                                                                                            |
+| --------- | ------------------------------------------------------------------------------------------------------------------ |
+| `src`     | Specifies the path (source) of the image.                                                                          |
+| `alt`     | Provides alternative text describing the image. It is displayed if the image cannot load and helps screen readers. |
+| `width`   | Specifies the width of the image.                                                                                  |
+| `height`  | Specifies the height of the image.                                                                                 |
+
+### Key Points
+
+- Attributes are always written in the **opening tag**.
+- They are written as **name="value"** pairs.
+- One HTML element can have multiple attributes.
+
+**Syntax:**
+
+```html
+<element attribute="value">Content</element>
+```
