@@ -9,7 +9,13 @@ Install the extension.
 Enable it. Restart or refresh VS Code after installation.
 One Monokai Theme
 Install the theme.
+install image preview. Enable it. Restart or refresh VS Code after installation.
+install color Highlight, Enable it. Restart or refresh VS Code after installation.
+install Auto Rename Tag, Enable it. Restart or refresh VS Code after installation.
+Install Live Server, Enable it. Restart or refresh VS Code after installation.
+
 Go to Color Theme and select One Monokai.
+
 VS Code Settings
 
 Open Settings (Ctrl + ,) and configure the following:
