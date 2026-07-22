@@ -213,3 +213,77 @@ Images and Attributes
 ```html
 <element attribute="value">Content</element>
 ```
+
+## HTML Links
+
+HTML uses the **`<a>` (anchor)** element to create hyperlinks.
+
+### Types of Links
+
+#### 1. Internal Links
+
+Links that point to **other pages within the same website**.
+
+**Example:**
+
+```html
+<a href="about.html">About Us</a>
+```
+
+---
+
+#### 2. External Links
+
+Links that point to **pages on another website**.
+
+**Example:**
+
+```html
+<a href="https://www.google.com">Google</a>
+```
+
+---
+
+## Opening a Link in a New Tab
+
+To open a link in a **new browser tab**, use the `target` attribute with the value `_blank`.
+
+**Example:**
+
+```html
+<a href="https://www.google.com" target="_blank">Visit Google</a>
+```
+
+---
+
+## Common Link Attributes
+
+| Attribute | Purpose                                      |
+| --------- | -------------------------------------------- |
+| `href`    | Specifies the destination URL or webpage.    |
+| `target`  | Specifies where the linked page should open. |
+
+### Common `target` Values
+
+| Value    | Description                               |
+| -------- | ----------------------------------------- |
+| `_self`  | Opens the link in the same tab (default). |
+| `_blank` | Opens the link in a new tab.              |
+
+---
+
+## Syntax
+
+```html
+<a href="URL" target="_blank">Link Text</a>
+```
+
+---
+
+## Key Points
+
+- `<a>` is used to create hyperlinks.
+- `href` specifies the destination of the link.
+- `target="_blank"` opens the link in a new tab.
+- Use **internal links** to navigate within your website.
+- Use **external links** to navigate to other websites.
