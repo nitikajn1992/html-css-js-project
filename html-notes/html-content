@@ -178,3 +178,5 @@ Use only one <h1> on a webpage.
 Prefer semantic HTML (<strong>, <em>) instead of using tags only for appearance.
 Use <ol> for numbered lists and <ul> for bullet lists.
 Every item inside a list is created using the <li> element.
+
+Images and Attributes
