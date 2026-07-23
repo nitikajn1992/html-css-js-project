@@ -145,12 +145,74 @@ Declaration → Property + Value
 Declaration Block → Collection of Declarations
 ```
 
-Inline css
-Inline css is writting the CSS code inside the html element
-it never be used
+CSS Types
 
-Internal CSS
-Internal CSS is writing the CSS code under the head section
+1. Inline CSS
 
-External CSS
-Internal CSS is writing the CSS code in an external file
+Definition:
+Inline CSS is written directly inside an HTML element using the style attribute.
+
+Syntax:
+
+<h1 style="color: blue;">Hello World</h1>
+
+Key Points:
+
+CSS is written inside the HTML element.
+Uses the style attribute.
+Not recommended for large projects.
+Rarely used in professional development. 2. Internal CSS
+
+Definition:
+Internal CSS is written inside the <style> tag, which is placed in the <head> section of an HTML document.
+
+Syntax:
+
+<head>
+  <style>
+    h1 {
+      color: blue;
+    }
+  </style>
+</head>
+
+Key Points:
+
+CSS is written inside the same HTML file.
+Uses the <style> tag.
+Suitable for styling a single web page. 3. External CSS
+
+Definition:
+External CSS is written in a separate .css file and linked to the HTML document using the <link> tag.
+
+Syntax:
+
+HTML
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+style.css
+
+h1 {
+color: blue;
+}
+
+Key Points:
+
+CSS is stored in a separate file.
+One CSS file can style multiple HTML pages.
+Most commonly used in real-world projects.
+Keeps HTML clean and easy to maintain.
+Quick Comparison
+CSS Type Where is CSS Written? Used In Professional Projects?
+Inline CSS Inside the HTML element (style attribute) ❌ Rarely
+Internal CSS Inside the <style> tag in the <head> ⚠️ Sometimes (small pages)
+External CSS In a separate .css file ✅ Yes (most common)
+Easy Interview Answer
+Inline CSS: CSS is written directly inside an HTML element using the style attribute.
+Internal CSS: CSS is written inside the <style> tag in the <head> section of an HTML document.
+External CSS: CSS is written in a separate .css file and linked to the HTML document using the <link> tag.
+
+These definitions are accurate, concise, and suitable for both interviews and revision notes.
