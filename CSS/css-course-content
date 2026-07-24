@@ -368,3 +368,105 @@ A larger value increases the space between lines, making text easier to read.
 - `text-transform` → Changes letter case.
 - `text-align` → Aligns text horizontally.
 - `line-height` → Adjusts spacing between lines for better readability.
+
+# Combining Selectors
+
+**Combining selectors** allows you to apply the same style to multiple elements or to select elements based on their relationship.
+
+---
+
+## 1. List Selector (Grouping Selector)
+
+A **list selector** is used to apply the **same CSS styles to multiple elements**.
+
+Instead of writing separate CSS rules, you can group selectors using a **comma (`,`)**.
+
+### Syntax
+
+```css id="7a2u7l"
+selector1,
+selector2,
+selector3 {
+  property: value;
+}
+```
+
+### Example
+
+```css id="5ik1rd"
+h1,
+h2,
+p {
+  color: blue;
+}
+```
+
+This applies the same text color (**blue**) to all `<h1>`, `<h2>`, and `<p>` elements.
+
+### Why Use It?
+
+- Reduces duplicate code.
+- Makes CSS cleaner and easier to maintain.
+
+---
+
+## 2. Descendant Selector
+
+A **descendant selector** selects an element that is **inside another element**, regardless of how deeply it is nested.
+
+It uses a **space** between the selectors.
+
+### Syntax
+
+```css id="opzm50"
+parent child {
+  property: value;
+}
+```
+
+### Example
+
+#### HTML
+
+```html id="xrlm5e"
+<article>
+  <p>This paragraph is inside an article.</p>
+</article>
+
+<p>This paragraph is outside the article.</p>
+```
+
+#### CSS
+
+```css id="jlwm4m"
+article p {
+  color: red;
+}
+```
+
+### Result
+
+- ✅ The paragraph **inside** `<article>` becomes **red**.
+- ❌ The paragraph **outside** `<article>` is **not affected**.
+
+### Why Use It?
+
+Use a descendant selector when you want to style elements **only within a specific parent element**.
+
+---
+
+# Quick Reference
+
+| Selector                | Syntax          | Purpose                                         |
+| ----------------------- | --------------- | ----------------------------------------------- |
+| **List Selector**       | `h1, h2, p { }` | Applies the same styles to multiple elements.   |
+| **Descendant Selector** | `article p { }` | Selects child elements inside a parent element. |
+
+---
+
+# Key Points
+
+- **List Selector (`,`)** → Styles multiple elements using one CSS rule.
+- **Descendant Selector (space)** → Styles elements that are inside another element.
+- Group selectors with a **comma**.
+- Select descendants using a **space** between selectors.
