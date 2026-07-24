@@ -851,3 +851,127 @@ h1 {
 - Hexadecimal colors start with `#` and contain six characters.
 - Grey shades are created by using equal RGB values.
 - The `border` property requires **width, style, and color**.
+
+# CSS Pseudo-Classes
+
+## What are Pseudo-Classes?
+
+A **pseudo-class** is a keyword added to a CSS selector to style an element based on its **state** or **position** in the HTML document.
+
+Pseudo-classes begin with a **colon (`:`)**.
+
+### Syntax
+
+```css id="5m9tnb"
+selector:pseudo-class {
+  property: value;
+}
+```
+
+---
+
+# `:first-child`
+
+The `:first-child` pseudo-class selects the **first child element** inside its parent.
+
+### HTML
+
+```html id="rppxq8"
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+```
+
+### CSS
+
+```css id="n0m5tb"
+li:first-child {
+  font-weight: bold;
+}
+```
+
+### Output
+
+- **HTML** ← Bold
+- CSS
+- JavaScript
+
+---
+
+# `:last-child`
+
+The `:last-child` pseudo-class selects the **last child element** inside its parent.
+
+### CSS
+
+```css id="fdt3gt"
+li:last-child {
+  font-style: italic;
+}
+```
+
+### Output
+
+- HTML
+- CSS
+- _JavaScript_ ← Italic
+
+---
+
+# Using Both Together
+
+### CSS
+
+```css id="p1np6g"
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+```
+
+### Result
+
+- **HTML** ← Bold
+- CSS
+- _JavaScript_ ← Italic
+
+---
+
+# Common Pseudo-Classes
+
+| Pseudo-Class   | Purpose                                               |
+| -------------- | ----------------------------------------------------- |
+| `:first-child` | Selects the first child element.                      |
+| `:last-child`  | Selects the last child element.                       |
+| `:hover`       | Applies styles when the mouse hovers over an element. |
+| `:active`      | Applies styles while an element is being clicked.     |
+| `:visited`     | Styles links that have already been visited.          |
+| `:link`        | Styles unvisited links.                               |
+
+---
+
+# Key Points
+
+- A pseudo-class starts with a **colon (`:`)**.
+- It styles an element based on its **state** or **position**.
+- `:first-child` selects the **first child**.
+- `:last-child` selects the **last child**.
+
+---
+
+# Easy Way to Remember
+
+```text id="gt7vyl"
+:first-child  → First child element
+
+:last-child   → Last child element
+
+:hover        → Mouse is over the element
+
+:active       → Element is being clicked
+```
