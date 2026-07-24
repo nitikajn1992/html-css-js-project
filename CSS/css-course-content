@@ -216,3 +216,155 @@ Internal CSS: CSS is written inside the <style> tag in the <head> section of an 
 External CSS: CSS is written in a separate .css file and linked to the HTML document using the <link> tag.
 
 These definitions are accurate, concise, and suitable for both interviews and revision notes.
+
+# CSS Text Properties
+
+CSS **text properties** are used to control the appearance of text on a webpage.
+
+---
+
+## 1. `font-size`
+
+Changes the size of the text.
+
+**Syntax:**
+
+```css
+p {
+  font-size: 16px;
+}
+```
+
+**Example:**
+
+```css
+h1 {
+  font-size: 32px;
+}
+```
+
+---
+
+## 2. `font-family`
+
+Changes the font (typeface) of the text.
+
+**Syntax:**
+
+```css
+p {
+  font-family: Arial, sans-serif;
+}
+```
+
+**Example:**
+
+```css
+body {
+  font-family: Arial, sans-serif;
+}
+```
+
+---
+
+## 3. `font-style`
+
+Changes the style of the text.
+
+**Common Values:**
+
+- `normal` (default)
+- `italic`
+- `oblique`
+
+**Example:**
+
+```css
+p {
+  font-style: italic;
+}
+```
+
+---
+
+## 4. `text-transform`
+
+Changes the capitalization of the text.
+
+**Common Values:**
+
+| Value        | Result      |
+| ------------ | ----------- |
+| `uppercase`  | HELLO WORLD |
+| `lowercase`  | hello world |
+| `capitalize` | Hello World |
+| `none`       | No change   |
+
+**Example:**
+
+```css
+h2 {
+  text-transform: uppercase;
+}
+```
+
+---
+
+## 5. `text-align`
+
+Aligns text horizontally.
+
+**Common Values:**
+
+- `left`
+- `center`
+- `right`
+- `justify`
+
+**Example:**
+
+```css
+p {
+  text-align: center;
+}
+```
+
+---
+
+## 6. `line-height`
+
+Controls the vertical spacing between lines of text.
+
+**Example:**
+
+```css
+p {
+  line-height: 1.5;
+}
+```
+
+A larger value increases the space between lines, making text easier to read.
+
+---
+
+# Quick Reference
+
+| Property         | Purpose                                     |
+| ---------------- | ------------------------------------------- |
+| `font-size`      | Changes the text size.                      |
+| `font-family`    | Changes the font.                           |
+| `font-style`     | Makes text normal, italic, or oblique.      |
+| `text-transform` | Changes text capitalization.                |
+| `text-align`     | Aligns text (left, center, right, justify). |
+| `line-height`    | Controls spacing between lines of text.     |
+
+---
+
+# Key Points
+
+- `font-size` → Size of the text.
+- `font-family` → Font used for the text.
+- `font-style` → Text style (normal, italic, oblique).
+- `text-transform` → Changes letter case.
+- `text-align` → Aligns text horizontally.
+- `line-height` → Adjusts spacing between lines for better readability.
