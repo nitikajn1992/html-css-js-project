@@ -683,3 +683,171 @@ Use a `class` whenever you want to:
 - An **ID** should be unique on a webpage.
 - **Use classes for CSS styling.**
 - **Use IDs for unique elements, JavaScript, or anchor links.**
+
+# Working with Colors in CSS
+
+CSS provides different ways to define colors for text, backgrounds, borders, and other elements.
+
+---
+
+# RGB Color Model
+
+**RGB** stands for:
+
+- **R** → Red
+- **G** → Green
+- **B** → Blue
+
+Each color has a value between **0 and 255**.
+
+Example:
+
+```css id="3cpj3g"
+h1 {
+  color: rgb(255, 0, 0);
+}
+```
+
+This displays **red** because:
+
+- Red = 255
+- Green = 0
+- Blue = 0
+
+---
+
+# Ways to Define Colors in CSS
+
+## 1. RGB / RGBA Notation
+
+### RGB
+
+Uses Red, Green, and Blue values.
+
+```css id="6jlwm7"
+color: rgb(255, 0, 0);
+```
+
+Example:
+
+```css id="j6jj6n"
+p {
+  color: rgb(0, 128, 255);
+}
+```
+
+---
+
+### RGBA
+
+RGBA is the same as RGB but adds an **Alpha (A)** value for transparency.
+
+Alpha values range from:
+
+- `0` → Fully transparent
+- `1` → Fully visible
+
+Example:
+
+```css id="n0l8u4"
+background-color: rgba(255, 0, 0, 0.5);
+```
+
+This creates a **semi-transparent red** background.
+
+---
+
+## 2. Hexadecimal Notation
+
+Hexadecimal (Hex) colors begin with `#` followed by **six hexadecimal digits**.
+
+```css id="0ezmmy"
+color: #1098ad;
+```
+
+Structure:
+
+```text id="taw0vf"
+#RRGGBB
+```
+
+Examples:
+
+| Color | Hex Code  |
+| ----- | --------- |
+| Red   | `#ff0000` |
+| Green | `#00ff00` |
+| Blue  | `#0000ff` |
+| Black | `#000000` |
+| White | `#ffffff` |
+
+---
+
+# Shades of Grey
+
+Grey colors are created by using **equal values** for Red, Green, and Blue.
+
+Examples:
+
+| Color      | Hex Code  |
+| ---------- | --------- |
+| Black      | `#000000` |
+| Dark Grey  | `#333333` |
+| Grey       | `#666666` |
+| Light Grey | `#cccccc` |
+| White      | `#ffffff` |
+
+---
+
+# Border Property
+
+The `border` property adds a border around an HTML element.
+
+### Syntax
+
+```css id="j5ztmh"
+border: width style color;
+```
+
+### Example
+
+```css id="fck2mj"
+border: 5px solid #1098ad;
+```
+
+### Breakdown
+
+| Value     | Meaning      |
+| --------- | ------------ |
+| `5px`     | Border width |
+| `solid`   | Border style |
+| `#1098ad` | Border color |
+
+Example:
+
+```css id="gzux1w"
+h1 {
+  border: 5px solid #1098ad;
+}
+```
+
+---
+
+# Summary Table
+
+| Property  | Purpose                                           |
+| --------- | ------------------------------------------------- |
+| `rgb()`   | Defines colors using Red, Green, and Blue values. |
+| `rgba()`  | Defines colors with transparency.                 |
+| `#RRGGBB` | Defines colors using hexadecimal values.          |
+| `border`  | Adds a border around an element.                  |
+
+---
+
+# Key Points
+
+- RGB uses **Red, Green, and Blue** values (0–255).
+- RGBA adds **transparency** using the Alpha value.
+- Hexadecimal colors start with `#` and contain six characters.
+- Grey shades are created by using equal RGB values.
+- The `border` property requires **width, style, and color**.
