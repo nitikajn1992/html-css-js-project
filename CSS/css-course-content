@@ -219,27 +219,19 @@ These definitions are accurate, concise, and suitable for both interviews and re
 
 # CSS Text Properties
 
-CSS **text properties** are used to control the appearance of text on a webpage.
+CSS text properties are used to control the appearance and formatting of text on a webpage.
 
 ---
 
 ## 1. `font-size`
 
-Changes the size of the text.
-
-**Syntax:**
-
-```css
-p {
-  font-size: 16px;
-}
-```
+Sets the size of the text.
 
 **Example:**
 
 ```css
-h1 {
-  font-size: 32px;
+p {
+  font-size: 18px;
 }
 ```
 
@@ -247,15 +239,7 @@ h1 {
 
 ## 2. `font-family`
 
-Changes the font (typeface) of the text.
-
-**Syntax:**
-
-```css
-p {
-  font-family: Arial, sans-serif;
-}
-```
+Specifies the font (typeface) of the text.
 
 **Example:**
 
@@ -273,7 +257,7 @@ Changes the style of the text.
 
 **Common Values:**
 
-- `normal` (default)
+- `normal`
 - `italic`
 - `oblique`
 
@@ -289,21 +273,19 @@ p {
 
 ## 4. `text-transform`
 
-Changes the capitalization of the text.
+Changes the capitalization of text.
 
 **Common Values:**
 
-| Value        | Result      |
-| ------------ | ----------- |
-| `uppercase`  | HELLO WORLD |
-| `lowercase`  | hello world |
-| `capitalize` | Hello World |
-| `none`       | No change   |
+- `uppercase` → ALL CAPITAL LETTERS
+- `lowercase` → all small letters
+- `capitalize` → First Letter Of Each Word
+- `none` → Default text
 
 **Example:**
 
 ```css
-h2 {
+h1 {
   text-transform: uppercase;
 }
 ```
@@ -324,7 +306,7 @@ Aligns text horizontally.
 **Example:**
 
 ```css
-p {
+h1 {
   text-align: center;
 }
 ```
@@ -333,41 +315,92 @@ p {
 
 ## 6. `line-height`
 
-Controls the vertical spacing between lines of text.
+Controls the vertical space between lines of text.
 
 **Example:**
 
 ```css
 p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 ```
 
-A larger value increases the space between lines, making text easier to read.
+---
+
+## 7. `font-weight`
+
+Controls the thickness (boldness) of the text.
+
+**Common Values:**
+
+- `normal`
+- `bold`
+- `100` to `900`
+
+**Example:**
+
+```css
+h1 {
+  font-weight: bold;
+}
+```
 
 ---
 
-# Quick Reference
+## 8. `list-style`
 
-| Property         | Purpose                                     |
-| ---------------- | ------------------------------------------- |
-| `font-size`      | Changes the text size.                      |
-| `font-family`    | Changes the font.                           |
-| `font-style`     | Makes text normal, italic, or oblique.      |
-| `text-transform` | Changes text capitalization.                |
-| `text-align`     | Aligns text (left, center, right, justify). |
-| `line-height`    | Controls spacing between lines of text.     |
+Changes the appearance of list markers.
+
+**Common Values:**
+
+- `disc`
+- `circle`
+- `square`
+- `none`
+
+**Example:**
+
+```css
+ul {
+  list-style: square;
+}
+```
+
+To remove bullets:
+
+```css
+ul {
+  list-style: none;
+}
+```
+
+---
+
+# Summary Table
+
+| Property         | Purpose                                            |
+| ---------------- | -------------------------------------------------- |
+| `font-size`      | Sets the text size.                                |
+| `font-family`    | Specifies the font.                                |
+| `font-style`     | Changes the text style (normal, italic).           |
+| `text-transform` | Changes letter capitalization.                     |
+| `text-align`     | Aligns the text.                                   |
+| `line-height`    | Sets the space between lines.                      |
+| `font-weight`    | Controls the boldness of the text.                 |
+| `list-style`     | Changes or removes list markers (bullets/numbers). |
 
 ---
 
 # Key Points
 
-- `font-size` → Size of the text.
-- `font-family` → Font used for the text.
-- `font-style` → Text style (normal, italic, oblique).
-- `text-transform` → Changes letter case.
-- `text-align` → Aligns text horizontally.
-- `line-height` → Adjusts spacing between lines for better readability.
+- Use **`font-size`** to control text size.
+- Use **`font-family`** to choose a font.
+- Use **`font-style`** for italic or oblique text.
+- Use **`text-transform`** to change letter casing.
+- Use **`text-align`** to align text.
+- Use **`line-height`** to improve readability.
+- Use **`font-weight`** to make text lighter or bolder.
+- Use **`list-style`** to customize or remove list bullets and numbering.
 
 # Combining Selectors
 
@@ -470,3 +503,183 @@ Use a descendant selector when you want to style elements **only within a specif
 - **Descendant Selector (space)** → Styles elements that are inside another element.
 - Group selectors with a **comma**.
 - Select descendants using a **space** between selectors.
+
+Class & ID Selector
+
+# CSS Selectors
+
+A **CSS Selector** is used to select HTML elements so that you can apply styles to them.
+
+---
+
+## 1. Class Selector (`.`)
+
+A **class selector** is used to style **one or more HTML elements** that share the same class name.
+
+### HTML
+
+```html id="kzvk80"
+<h1 class="heading">Welcome</h1>
+
+<p class="heading">Hello World!</p>
+```
+
+### CSS
+
+```css id="1g9jti"
+.heading {
+  color: blue;
+}
+```
+
+**Output:**
+
+- Both the `<h1>` and `<p>` elements become **blue** because they have the same class.
+
+---
+
+# 2. ID Selector (`#`)
+
+An **ID selector** is used to style **one unique HTML element**.
+
+### HTML
+
+```html id="ewcqz5"
+<h1 id="title">Welcome</h1>
+```
+
+### CSS
+
+```css id="ylv0jh"
+#title {
+  color: red;
+}
+```
+
+Only the element with `id="title"` will be styled.
+
+---
+
+# Difference Between `class` and `id`
+
+| Class (`class`)                  | ID (`id`)                                                       |
+| -------------------------------- | --------------------------------------------------------------- |
+| Starts with `.` in CSS           | Starts with `#` in CSS                                          |
+| Can be used on multiple elements | Should be used only once per page                               |
+| Reusable                         | Unique                                                          |
+| Best for styling                 | Mainly used for unique elements, JavaScript, or page navigation |
+
+---
+
+# Why Use `class` Instead of `id` for CSS?
+
+In modern web development, **classes are preferred for styling**.
+
+### Reasons
+
+### 1. Reusable
+
+One class can be applied to many elements.
+
+```html id="e57bgx"
+<h2 class="heading">HTML</h2>
+
+<h2 class="heading">CSS</h2>
+
+<h2 class="heading">JavaScript</h2>
+```
+
+```css id="6z5gfe"
+.heading {
+  color: blue;
+}
+```
+
+All three headings use the same CSS.
+
+---
+
+### 2. Easier to Maintain
+
+If you want to change the style later, update **one class** instead of multiple IDs.
+
+---
+
+### 3. Better for Large Projects
+
+Large websites often have hundreds of elements with the same design. Classes allow you to reuse styles instead of writing duplicate CSS.
+
+---
+
+### 4. IDs Have Higher Specificity
+
+An ID selector (`#`) has a higher priority than a class selector (`.`).
+
+This can make your CSS harder to override and maintain.
+
+Example:
+
+```css id="i2t02j"
+.heading {
+  color: blue;
+}
+
+#title {
+  color: red;
+}
+```
+
+If an element has both:
+
+```html id="m5k8y8"
+<h1 id="title" class="heading">Hello</h1>
+```
+
+The text will be **red** because the ID selector has higher specificity.
+
+---
+
+# When to Use `id`
+
+Use an `id` when the element is **unique** on the page.
+
+Examples:
+
+- Main navigation
+- Hero section
+- Login form
+- Unique banner
+
+It is also commonly used for:
+
+- JavaScript (`document.getElementById()`)
+- Linking to a section of a page
+
+Example:
+
+```html id="g4q0ps"
+<section id="about">...</section>
+
+<a href="#about">Go to About Section</a>
+```
+
+---
+
+# When to Use `class`
+
+Use a `class` whenever you want to:
+
+- Style multiple elements.
+- Reuse the same styles.
+- Build scalable and maintainable CSS.
+
+---
+
+# Key Points
+
+- `.` → Class Selector
+- `#` → ID Selector
+- A **class** can be reused on multiple elements.
+- An **ID** should be unique on a webpage.
+- **Use classes for CSS styling.**
+- **Use IDs for unique elements, JavaScript, or anchor links.**
